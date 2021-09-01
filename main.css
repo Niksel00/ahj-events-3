@@ -1,0 +1,95 @@
+.uploader {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uploader .upload_form {
+    width: 700px;
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.uploader .upload_form label {
+    width: 500px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.uploader .upload_form input {
+    padding: 5px;
+    font-size: 16px;
+    width: 250px;
+}
+
+.uploader .upload_form button {
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px 30px;
+    font-size: 18px;
+}
+
+.uploader .galery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.uploader .image {
+    margin: 15px 12px;
+    position: relative;
+}
+
+.uploader .image img {
+    width: 200px;
+}
+
+.uploader .close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 35px;
+    height: 35px;
+    border: 1px #555555 solid;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.uploader .close:before, .uploader .close:after {
+    position: absolute;
+    left: 17px;
+    top: 5px;
+    content: ' ';
+    height: 25px;
+    width: 2px;
+    background-color: #333333;
+}
+
+.uploader .close:before {
+    transform: rotate(45deg);
+}
+
+.uploader .close:after {
+    transform: rotate(-45deg);
+}
+
+.uploader .error {
+    width: 250px;
+    padding: 5px 30px;
+    background-color: #880000;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
